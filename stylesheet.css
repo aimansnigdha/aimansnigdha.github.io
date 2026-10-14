@@ -33,12 +33,15 @@ main, footer {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 30%;
+  grid-template-columns: 1fr;
   gap: 20px;
   align-items: center;
   padding: 28px 0 22px;
 }
-.hero-copy { min-width: 0; }
+.hero-copy {
+  min-width: 0;
+  grid-row: 2;
+}
 .eyebrow { display: none; }
 h1 {
   margin: 0 0 18px;
@@ -56,11 +59,13 @@ h1 span {
 .hero p { margin: 0 0 14px; }
 .intro { font-size: 14px; }
 .portrait {
-  width: 100%;
+  grid-row: 1;
+  width: 220px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 72%;
   border-radius: 50%;
+  justify-self: center;
 }
 
 .links {
