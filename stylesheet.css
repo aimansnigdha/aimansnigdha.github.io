@@ -159,6 +159,15 @@ h2 {
   object-fit: cover;
   background: #f3f3f3;
 }
+.publication img.paper-figure {
+  object-fit: contain;
+  background: #fff;
+}
+.publication.text-only {
+  grid-template-columns: 1fr;
+  min-height: 0;
+  border-top: 1px solid #eee;
+}
 .venue {
   margin: 0 0 3px;
   color: #8b4513;
